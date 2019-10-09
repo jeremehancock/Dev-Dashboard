@@ -10,7 +10,7 @@ The Pi Zero is something that I use for remote development on the go and started
 
 **`Note: All code is provided as-is without any warranty. Use at your own risk.`**
 
-### If you see any issues with these instructions please put in an [Issue](https://github.com/mhancoc7/Dev-Dashboard/issues) so that they can be updated. ###
+* **If you see any issues with these instructions please put in an [Issue](https://github.com/mhancoc7/Dev-Dashboard/issues) so that they can be updated.
 
 # [Vagrant Setup](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/vagrant)
 
