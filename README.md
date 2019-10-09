@@ -40,6 +40,8 @@ When using the Vagrant setup your repos are cloned to your local maching under `
 
 If you want to add more projects after intial setup you can either add repos to the `setup/build.conf` file and re-run `bash build.sh` or manually clone repos into the `localhost/www/html/` directory and they should show up in your dashboard.
 
+The `Labs` section of the dashboard is there for tinkering with GitHub repos and other projects. So you can clone a GitHub repo manually into `localhost/www/html` to test out some code. This section is not meant to be persistent but more of a sandbox.
+
 # Pi Zero Setup:
 
 <img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/assets/pizero-dashboard.png"/>
@@ -96,3 +98,5 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 - Add your laptop's SSH Key to Pi Zero `ssh-copy-id pi@pizero.local` or whatever hostname you set using the '-hn' flag to make it easier to login
 
 If you want to add more projects after intial setup you can either add repos to the `setup/build.conf` file and re-run `bash build.sh` or manually clone repos into the `/var/www/html/` directory on the pi and they should show up in your dashboard.
+
+The `Labs` section of the dashboard is there for tinkering with GitHub repos and other projects. So you can clone a GitHub repo manually into `/var/www/html` to test out some code. This section is not meant to be persistent but more of a sandbox.
