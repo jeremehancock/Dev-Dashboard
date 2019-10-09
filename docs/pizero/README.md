@@ -41,9 +41,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 
 - The MariaDB password can be set on line 4 of the `setup/bootstrap` file. The default username is `phpmyadmin` and the default password is `12345`.
 
-- Run `bash build.sh`
-
-(Options: Use '-hn <hostname>' to choose hostname. If you do not specify a hostname `pizero.local` will be used.)
+- Run `bash build.sh` (Optional: Use '-hn <hostname>' to choose hostname. If you do not specify a hostname `pizero.local` will be used.)
 
 - The build.sh script will reboot the Pi Zero at the end
 
