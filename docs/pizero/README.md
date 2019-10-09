@@ -39,7 +39,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
   - timezone = The timezone to set the Pi Zero to.
   - locales = The locales to use on the Pi Zero.
 
-- The MariaDB password can be set on line 4 of the `setup/bootstrap` file.
+- The MariaDB password can be set on line 4 of the `setup/bootstrap` file. The default username is `phpmyadmin` and the default password is `12345`.
 
 - Run `bash build.sh`
 
