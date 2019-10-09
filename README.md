@@ -13,7 +13,7 @@ Linux. Results may vary on MAC or Windows.
 <img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/vagrant-dashboard.png"/>
 
 
-# [Pi Zero Setup[(https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/pizero)
+# [Pi Zero Setup](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/pizero)
 
 <img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/pizero-dashboard.png"/>
 
