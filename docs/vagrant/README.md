@@ -18,7 +18,7 @@
   - git_user = Your GitHub username.
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard.
 
-- The MariaDB password can be set on line 4 of the `setup/bootstrap` file. The default username is `phpmyadmin` and the default password is `12345`
+- The MariaDB password can be set on line 4 of the `setup/bootstrap` file. The default username is `phpmyadmin` and the default password is `12345`.
 
 - Run `bash build.sh`
 
