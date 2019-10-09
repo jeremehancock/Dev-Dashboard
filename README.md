@@ -36,6 +36,8 @@ Linux. Results may vary on MAC or Windows.
 
 When using the Vagrant setup your repos are cloned to your local maching under "Vagrant/localhost/www/html" and are syned to the Vagrant box. This way you can destroy and recreate the Vagrant box without worrying about your code. 
 
+If you want to add more projects after intial setup you can either add repos to the `setup/build.conf` file and re-run `bash build.sh` or manually clone repos into the `localhost/www/html/` directory and they should show up in your dashboard.
+
 # Pi Zero Setup:
 
 The Pi Zero installation is designed to work with a Pi Zero setup as a USB dongle. This is a more advanced setup and may not be useful to many. More info on how a Pi Zero USB dongle can be setup can be found on my [Pi Lab blog](https://pilab.dev/raspberry-pi-portable-dev-server).
@@ -88,3 +90,5 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 - You can ssh into the Pi Zero using `ssh pi@pizero.local` or whatever hostname you set using the '-hn' flag
 
 - Add your laptop's SSH Key to Pi Zero `ssh-copy-id pi@pizero.local` or whatever hostname you set using the '-hn' flag to make it easier to login
+
+If you want to add more projects after intial setup you can either add repos to the `setup/build.conf` file and re-run `bash build.sh` or manually clone repos into the `/var/www/html/` directory on the pi and they should show up in your dashboard.
