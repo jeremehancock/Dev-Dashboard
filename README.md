@@ -4,7 +4,9 @@ The Dev Dashboard build tool will give you a complete LAMP stack in a local dev 
 
 There are two ways to use this tool. The first uses Vagrant and the other is a more intricate setup using a Pi Zero as a portable dev server. 
 
-The Vagrant setup is more than likely the most useful for most users. The Pi Zero is something that I use for remote development on the go and started as a proof-of-concept.
+The Vagrant setup is more than likely the most useful for most users. 
+
+The Pi Zero is something that I use for remote development on the go and started as a proof-of-concept.
 
 **`Note: All code is provided as-is without any warranty. Use at your own risk.`**
 
