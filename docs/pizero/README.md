@@ -1,6 +1,6 @@
 # Pi Zero Setup:
 
-<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/assets/pizero-dashboard.png"/>
+<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/pizero-dashboard.png"/>
 
 The Pi Zero installation is designed to work with a Pi Zero setup as a USB dongle. This is a more advanced setup and may not be useful to many. More info on how a Pi Zero USB dongle can be setup can be found on my [Pi Lab blog](https://pilab.dev/raspberry-pi-portable-dev-server).
 
