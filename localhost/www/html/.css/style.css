@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+}
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+
+
+body {
+	font: 1.3em/2em "Helvetica Neue", Arial, sans-serif;
+	color: #61636d;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.poweredby {
+	height:40px;
+	float: left;
+	padding-top: 5px;
+}
+
+.header {
+	z-index: 3;
+	height: 50px;
+	padding: 0 10px;
+	line-height: 50px;
+	background-image: linear-gradient(#e9eaea, #cecfd2);
+	border-bottom: 1px solid #bbb;
+}
+
+.header h1 {
+	float: left;
+	font-size: 1.25em;
+	margin-left: 5px;
+}
+
+.github {
+	height:40px;
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	z-index: 99;
+}
+
+/* ==========================================================================
+   Div Table
+   ========================================================================== */
+
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	/*border: 1px solid #999999;*/
+	display: table-cell;
+	padding: 3px 30px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.favicon {
+	width: 35px;
+	height: 35px;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+.newtab {
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.nonewtab {
+	display: none;
+}
+
+.even {
+	background: #dcdcdc;
+}
+
+.odd {
+	background: #f4f4f4;
+}
+
+.date {
+	color: #a2a4ab;
+}
+
+@media only screen and (max-width: 646px) {
+	.header-date {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 646px) {
+	.date {
+		display: none;
+	}
+}
+
+div a:hover {
+	color: cornflowerblue;
+}
+
+.name a {
+	color: #61636d;
+}
+
+.divTableRow:hover .name {
+	background: #51535c;
+	color: #FFF;
+}
+
+.divTableRow:hover .date {
+	background: #51535c;
+	color: #FFF;
+}
+
+.divTableRow:hover div a {
+	color: #FFF;
+}
+
