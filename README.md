@@ -15,5 +15,5 @@ Linux. Results may vary on MAC or Windows.
 
 # [Pi Zero Setup](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/pizero)
 
-<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/pizero-dashboard.png"/>
+[<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/pizero-dashboard.png"/>](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/pizero)
 
