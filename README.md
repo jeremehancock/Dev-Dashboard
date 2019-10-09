@@ -28,7 +28,7 @@ Linux. Results may vary on MAC or Windows.
   - git_user = Your GitHub username.
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard.
 
-- The MariaDB password can be set on line 4 of the `setup/bootstrap` file
+- The MariaDB password can be set on line 4 of the `setup/bootstrap` file.
 
 - Run `bash build.sh`
 
@@ -83,7 +83,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
   - timezone = The timezone to set the Pi Zero to.
   - locales = The locales to use on the Pi Zero.
 
-- The MariaDB password can be set on line 4 of the `setup/bootstrap` file
+- The MariaDB password can be set on line 4 of the `setup/bootstrap` file.
 
 - Run `bash build.sh`
 
