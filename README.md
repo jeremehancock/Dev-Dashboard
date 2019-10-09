@@ -10,6 +10,8 @@ Linux. Results may vary on MAC or Windows.
 
 # Vagrant Setup:
 
+<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/assets/vagrant-dashboard.png"/>
+
 **Pre-requisites:**
 
 - [Vagrant](https://www.vagrantup.com/docs/cli/)
@@ -39,6 +41,8 @@ When using the Vagrant setup your repos are cloned to your local maching under `
 If you want to add more projects after intial setup you can either add repos to the `setup/build.conf` file and re-run `bash build.sh` or manually clone repos into the `localhost/www/html/` directory and they should show up in your dashboard.
 
 # Pi Zero Setup:
+
+<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/assets/pizero-dashboard.png"/>
 
 The Pi Zero installation is designed to work with a Pi Zero setup as a USB dongle. This is a more advanced setup and may not be useful to many. More info on how a Pi Zero USB dongle can be setup can be found on my [Pi Lab blog](https://pilab.dev/raspberry-pi-portable-dev-server).
 
