@@ -6,6 +6,8 @@ Linux. Results may vary on MAC or Windows.
 
 **`Note: All code is provided as-is without any warranty. Use at your own risk.`**
 
+`If you see any issues with these instructions please put in an Issue so that they can be updated.`
+
 # Vagrant Setup:
 
 **Pre-requisites:**
@@ -86,6 +88,3 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 - You can ssh into the Pi Zero using `ssh pi@pizero.local` or whatever hostname you set using the '-hn' flag
 
 - Add your laptop's SSH Key to Pi Zero `ssh-copy-id pi@pizero.local` or whatever hostname you set using the '-hn' flag to make it easier to login
-
-
-`If you see any issues with these instructions please put in an Issue so that they can be updated.`
