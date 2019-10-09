@@ -12,7 +12,7 @@ Linux. Results may vary on MAC or Windows.
 
 **Pre-requisites:**
 
-- Vagrant 
+- [Vagrant](https://www.vagrantup.com/docs/cli/)
 
 **Installation/Usage:**
 
