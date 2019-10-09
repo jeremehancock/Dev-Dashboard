@@ -32,5 +32,5 @@ If you want to add more projects after intial setup you can either add repos to 
 
 The `Labs` section of the dashboard is there for tinkering with GitHub repos and other projects. So you can clone a GitHub repo manually into `localhost/www/html` to test out some code. This section is not meant to be persistent but more of a sandbox.
 
-*Tips:*
+# *Tips:*
 - If you want to have custom icons in the dashboard list be sure that your repos have a `favicon.ico` or `favicon.png` in the root of the project.
