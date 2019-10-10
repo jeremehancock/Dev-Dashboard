@@ -10,14 +10,14 @@ The Pi Zero is something that I use for remote development on the go and started
 
 > **If you see any issues with these instructions please put in an [Issue](https://github.com/mhancoc7/Dev-Dashboard/issues) so that they can be updated.**
 
-# [Vagrant Setup](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/vagrant)
+# [Vagrant Setup](https://github.com/mhancoc7/Dev-Dashboard/blob/master/docs/vagrant/README.md)
 
-[<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/vagrant-dashboard.png"/>](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/vagrant)
+[<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/vagrant-dashboard.png"/>](https://github.com/mhancoc7/Dev-Dashboard/blob/master/docs/vagrant/README.md)
 
 
-# [Pi Zero Setup](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/pizero)
+# [Pi Zero Setup](https://github.com/mhancoc7/Dev-Dashboard/blob/master/docs/pizero/README.md)
 
-[<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/pizero-dashboard.png"/>](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/pizero)
+[<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/pizero-dashboard.png"/>](https://github.com/mhancoc7/Dev-Dashboard/blob/master/docs/pizero/README.md)
 
 > #### `Note: All code is provided as-is without any warranty. Use at your own risk.`
 
