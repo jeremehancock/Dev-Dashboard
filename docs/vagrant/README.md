@@ -1,6 +1,6 @@
 # Vagrant Setup:
 
-<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard-Private/master/docs/assets/vagrant-dashboard.png"/>
+<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/vagrant-dashboard.png"/>
 
 ## Pre-requisites:
 
@@ -10,8 +10,8 @@
 
 - Add your SSH key to GitHub. [More info...](https://help.github.com/en/articles/about-ssh)
 
-- Clone the Dev-Dashboard-Private
-  - `git clone git@github.com:mhancoc7/Dev-Dashboard-Private.git Vagrant`
+- Clone the Dev-Dashboard
+  - `git clone git@github.com:mhancoc7/Dev-Dashboard.git Vagrant`
 
 - Go into the Vagrant directory
   - `cd Vagrant`
