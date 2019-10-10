@@ -10,7 +10,7 @@ The Pi Zero installation is designed to work with a Pi Zero setup as a USB dongl
 
 Once you have a working Pi Zero USB dongle built you can use the steps below to fully set up the Pi Zero as a portable dev server. This setup assumes that you will be using the Pi Zero in a similar fashion to Vagrant. In other words don't run this on a Pi Zero where you have other things setup. The idea here is to use the Pi Zero as a dev server that can easily be rebuilt using this script.
 
-### Installation/Usage:
+## Installation/Usage:
 
 - Flash Raspbian to SD card using [Etcher](https://www.balena.io/etcher/).
 
