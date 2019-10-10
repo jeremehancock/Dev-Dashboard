@@ -8,7 +8,7 @@ The Vagrant setup is more than likely the most useful for most users.
 
 The Pi Zero is something that I use for remote development on the go and started as a proof-of-concept.
 
-> If you see any issues with these instructions please put in an [Issue](https://github.com/mhancoc7/Dev-Dashboard/issues) so that they can be updated.
+> **If you see any issues with these instructions please put in an [Issue](https://github.com/mhancoc7/Dev-Dashboard/issues) so that they can be updated.**
 
 # [Vagrant Setup](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/vagrant)
 
