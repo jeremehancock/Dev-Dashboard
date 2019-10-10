@@ -31,7 +31,7 @@ When using the Vagrant setup your repos are cloned to your local machine under `
 
 If you want to add more projects after intial setup just add repos to the `setup/build.conf` file and re-run `bash build.sh` and they will show up in your dashboard.
 
-The `Labs` section of the dashboard is there for tinkering with GitHub repos and other projects. So you can clone a GitHub repo manually into `localhost/www/html` to test out some code. This section is not meant to be persistent but more of a sandbox.
+The `Labs` section of the dashboard is there for tinkering with GitHub repos and other projects. So you can clone a GitHub repo manually into `localhost/www/html/*labs/` to test out the code. This section is not meant to be persistent but more of a sandbox.
 
 # *Tips:*
-- If you want to have custom icons in the dashboard list be sure that your repos have a `favicon.ico` or `favicon.png` in the root of the project.
+- If you want to have custom icons in the dashboard list be sure that your repos have a `favicon.ico` or `favicon.png` in the root of the respective repo.
