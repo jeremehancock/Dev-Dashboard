@@ -12,9 +12,9 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 
 ## Installation/Usage:
 
-- Flash Raspbian to SD card using [Etcher](https://www.balena.io/etcher/).
+- Flash Raspbian to an SD card using [Etcher](https://www.balena.io/etcher/).
 
-- Once flashing is complete remove and reinsert SD card. This should auto mount two directories.
+- Once flashing is complete remove and reinsert the SD card. This should auto mount two directories.
 
 - Open the `boot` directory and Put `dtoverlay=dwc2` at the end of the `config.txt`.
 
@@ -34,7 +34,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 
 - Add the Pi Zero's SSH key to GitHub. [More info...](https://help.github.com/en/articles/about-ssh)
 
-- Clone Dev-Dashboard
+- Clone the Dev-Dashboard
   - `git clone git@github.com:mhancoc7/Dev-Dashboard.git`
 
 - Go into the Dev-Dashboard directory
