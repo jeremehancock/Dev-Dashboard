@@ -27,7 +27,7 @@
 
 - Use Vagrant commands to stop, start, and destroy Vagrant from the Vagrant directory. [More info...](https://www.vagrantup.com/docs/cli/)
 
-When using the Vagrant setup your repos are cloned to your local machine under `localhost/www/html/` and are syned to the Vagrant box. This way you can destroy and recreate the Vagrant box without worrying about your code. 
+When using the Vagrant setup your repos are cloned to your local machine under `localhost/www/html/` and are synced to the Vagrant box. This way you can destroy and recreate the Vagrant box without worrying about your code. 
 
 If you want to add more projects after intial setup just add repos to the [setup/config/build.conf](https://github.com/mhancoc7/Dev-Dashboard/blob/master/setup/config/build.conf) file and re-run `bash build.sh` and they will show up in your dashboard.
 
