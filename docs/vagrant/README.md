@@ -6,7 +6,7 @@
 
 - [Vagrant](https://www.vagrantup.com/docs/cli/)
 
-### Installation/Usage:
+## Installation/Usage:
 
 - Add your SSH key to GitHub. [More info...](https://help.github.com/en/articles/about-ssh)
 
