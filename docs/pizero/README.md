@@ -20,7 +20,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 
 - Open the `boot` directory and  Put `modules-load=dwc2,g_ether` right after `rootwait` in the `cmdline.txt`
 
-- Copy the contents of the `pre-setup/boot/` directory from the this project into the `boot` directory.
+- Copy the contents of the `pre-setup/boot/` directory from this project into the `boot` directory.
 
 - Modify the `wpa_supplicant.conf` file that you copied into the `boot` directory with your WiFi creds.
 
