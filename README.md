@@ -1,6 +1,6 @@
 # Dev-Dashboard
 
-The Dev Dashboard build tool will give you a complete LAMP stack in a local dev environment. It will setup your Git repos as sub-directories in the `/var/www/html` directory with a simple "dashboard" to access your projects. This script was built and tested using Linux. Results may vary on MAC or Windows.
+The Dev Dashboard build tool will give you a complete LAMP stack in a local dev environment. It will setup your Git repos as sub-directories in the `/var/www/html/` directory with a simple "dashboard" to access your projects. This script was built and tested using Linux. Results may vary on MAC or Windows.
 
 There are two ways to use this tool. The first uses Vagrant and the other is a more intricate setup using a Pi Zero as a portable dev server. 
 
