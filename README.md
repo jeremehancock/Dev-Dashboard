@@ -19,6 +19,6 @@ The Pi Zero is something that I use for remote development on the go and started
 
 [<img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/pizero-dashboard.png"/>](https://github.com/mhancoc7/Dev-Dashboard/tree/master/docs/pizero)
 
-#### `Note: All code is provided as-is without any warranty. Use at your own risk.`
+> #### `Note: All code is provided as-is without any warranty. Use at your own risk.`
 
 
