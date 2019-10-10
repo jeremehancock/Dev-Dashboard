@@ -66,3 +66,5 @@ The `Labs` section of the dashboard is there for tinkering with GitHub repos and
 
 # *Tips:*
 - If you want to have custom icons in the dashboard list be sure that your repos have a `favicon.ico` or `favicon.png` in the root of the respective repo.
+
+> #### `Note: All code is provided as-is without any warranty. Use at your own risk.`
