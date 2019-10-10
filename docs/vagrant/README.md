@@ -10,7 +10,8 @@
 
 - Add your SSH key to GitHub. [More info...](https://help.github.com/en/articles/about-ssh)
 
-- Clone Dev-Dashboard `git clone git@github.com:mhancoc7/Dev-Dashboard.git Vagrant`
+- Clone Dev-Dashboard
+  - `git clone git@github.com:mhancoc7/Dev-Dashboard.git Vagrant`
 
 - Go into the Vagrant directory
   - `cd Vagrant`
