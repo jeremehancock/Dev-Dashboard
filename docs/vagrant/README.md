@@ -12,9 +12,10 @@
 
 - Clone Dev-Dashboard `git clone git@github.com:mhancoc7/Dev-Dashboard.git Vagrant`
 
-- Go into the Vagrant directory `cd Vagrant`
+- Go into the Vagrant directory
+> `cd Vagrant`
 
-- Configuration options are located in the `setup/build.conf` directory.
+- Configuration options are located in the `setup/build.conf` file.
   - git_user = Your GitHub username.
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard.
 
