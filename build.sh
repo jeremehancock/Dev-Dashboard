@@ -37,9 +37,13 @@ while [ -n "$1" ]; do # while loop starts
 done
 
 # Load configurations
-. setup/build.conf
+. setup/config/build.conf
 
 if [ -f "$picheck" ]; then
+
+  # Copy build.conf to Pi for the bootstrap.sh file
+  sudo mkdir -p /etc/dev-dashboard/config
+  sudo cp setup/config/build.conf /etc/dev-dashboard/config/build.conf
 
   # run bootstrap manually
   bash setup/bootstrap.sh

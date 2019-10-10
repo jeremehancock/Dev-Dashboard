@@ -43,11 +43,10 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 - Configuration options are located in the `setup/build.conf` file
   - git_user = Your GitHub username
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard
+  - db_password = The password to use for MariaDB and PHPMyadmin (The username is `phpmyadmin`)
   - pi_password = The password that you would like to use on the Pi Zero. The default is to keep the default pi password
   - timezone = The timezone to set on the Pi Zero
   - locales = The locales to use on the Pi Zero
-
-- The MariaDB password can be set on line 4 of the `setup/bootstrap.sh` file. The default username is `phpmyadmin` and the default password is `12345`
 
 - Run `bash build.sh`
   - (Optional: Use '-hn <hostname>' to choose hostname. If you do not specify a hostname `pizero.local` will be used.)

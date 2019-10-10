@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-# PHPMyadmin and MariaDB password. Use single quotes to allow special characters
-PASSWORD='12345'
+# Load configurations
+. /etc/dev-dashboard/config/build.conf
+
+# PHPMyadmin and MariaDB password.
+PASSWORD=$db_password
 
 # update / upgrade
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
