@@ -22,7 +22,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 
 - Copy the contents of the `pre-setup/boot/` directory from this project into the `boot` directory.
 
-- Modify the `wpa_supplicant.conf` file that you copied into the `boot` directory with your WiFi creds.
+- Modify the [wpa_supplicant.conf](https://github.com/mhancoc7/Dev-Dashboard/blob/master/pre-setup/boot/wpa_supplicant.conf) file that you copied into the `boot` directory with your WiFi creds.
 
 - Unmount and remove the SD card.
 
