@@ -2,11 +2,11 @@
 
 <img src="https://raw.githubusercontent.com/mhancoc7/Dev-Dashboard/master/docs/assets/vagrant-dashboard.png"/>
 
-**Pre-requisites:**
+## Pre-requisites:
 
 - [Vagrant](https://www.vagrantup.com/docs/cli/)
 
-**Installation/Usage:**
+### Installation/Usage:
 
 - Add your ssh key to GitHub. [More info...](https://help.github.com/en/articles/about-ssh)
 
