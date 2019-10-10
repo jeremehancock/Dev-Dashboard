@@ -40,7 +40,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 - Go into the Dev-Dashboard directory
   - `cd Dev-Dashboard`
 
-- Configuration options are located in the `setup/build.conf` file
+- Configuration options are located in the [setup/config/build.conf](https://github.com/mhancoc7/Dev-Dashboard/blob/master/setup/config/build.conf) file
   - git_user = Your GitHub username
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard
   - db_password = The password to use for MariaDB and PHPMyadmin (The username is `phpmyadmin`)
@@ -59,7 +59,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 
 - Add your computer's SSH Key to Pi Zero `ssh-copy-id pi@pizero.local` or whatever hostname you set using the '-hn' flag to make it easier to login
 
-If you want to add more projects after intial setup just add repos to the `setup/build.conf` file and re-run `bash build.sh` and they will show up in your dashboard.
+If you want to add more projects after intial setup just add repos to the [setup/config/build.conf](https://github.com/mhancoc7/Dev-Dashboard/blob/master/setup/config/build.conf) file and re-run `bash build.sh` and they will show up in your dashboard.
 
 The `Labs` section of the dashboard is there for tinkering with GitHub repos and other projects. So you can clone a GitHub repo manually into `/var/www/html/*labs/` on the Pi Zero to test out the code. This section is not meant to be persistent but more of a sandbox.
 
