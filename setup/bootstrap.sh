@@ -44,7 +44,7 @@ sudo -E apt-get -y install phpmyadmin
 
 echo -e "\e[32mphpMyAdmin Install Complete\e[0m"
 
-# install randomgoat stuff
+# install extra PHP stuff
 sudo -E apt-get install -y php-xml
 sudo -E apt-get install -y php.mbstring
 sudo -E apt-get install -y php-json
