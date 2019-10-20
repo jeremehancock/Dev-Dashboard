@@ -9,6 +9,10 @@ DEBIAN_FRONTEND=noninteractive
 # PHPMyadmin and MariaDB password.
 PASSWORD=$db_password
 
+# GitHub details
+GIT_EMAIL=$git_email
+GIT_NAME=$git_name
+
 # update / upgrade
 sudo -E apt-get update
 sudo -E apt-get -y upgrade
@@ -55,8 +59,8 @@ echo -e "\e[32mMisc Install Complete\e[0m"
 
 # install/configure git
 sudo -E apt-get install -y git
-git config --global user.email "michael@jeremehancock.com"
-git config --global user.name "Jereme Hancock"
+git config --global user.email $GIT_EMAIL
+git config --global user.name $GIT_NAME
 
 echo -e "\e[32mGit Install/Configure Complete\e[0m"
 
