@@ -19,6 +19,8 @@
 
 - Configuration options are located in the [setup/config/build.conf](https://github.com/mhancoc7/Dev-Dashboard/blob/master/setup/config/build.conf) file
   - git_user = Your GitHub username
+  - git_email = Your GitHub email
+  - git_name = Your GitHub Name
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard
   - db_password = The password to use for MariaDB and PHPMyadmin (The username is `phpmyadmin`)
 
