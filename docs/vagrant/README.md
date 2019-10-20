@@ -4,7 +4,8 @@
 
 ## Pre-requisites:
 
-- [Vagrant](https://www.vagrantup.com/docs/cli/)
+- [Vagrant](https://www.vagrantup.com/)
+- [VirtualBox](https://www.virtualbox.org/)
 
 ## Installation/Usage:
 
