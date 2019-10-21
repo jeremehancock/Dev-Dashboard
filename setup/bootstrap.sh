@@ -15,7 +15,7 @@ GIT_NAME=$git_name
 
 # update / upgrade
 sudo -E apt-get update
-sudo -E apt-get -y upgrade
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
 
 echo -e "\e[32mUpgrade Complete\e[0m"
 
