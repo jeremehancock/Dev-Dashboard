@@ -3,7 +3,7 @@
 picheck="/var/www/html/config/pizero"
 config="/var/www/html/config"
 
-echo -e "\e[96m*************************** Checking for Pi Zero or Vagrant ***********\e[0m"
+# Check for Pi Zero and set picheck file
 if [[ "$HOSTNAME" == "pizero.local" || "$HOSTNAME" == "raspberrypi" ]]; then
   if [ ! -d "$config" ]; then
     sudo mkdir -p "$config"
