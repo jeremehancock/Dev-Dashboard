@@ -35,7 +35,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
 - Add the Pi Zero's SSH key to GitHub. [More info...](https://help.github.com/en/articles/about-ssh)
 
 - Clone the Dev-Dashboard
-  - `git clone git@github.com:mhancoc7/Dev-Dashboard.git`
+  - `git clone https://github.com/mhancoc7/Dev-Dashboard.git`
 
 - Go into the Dev-Dashboard directory
   - `cd Dev-Dashboard`

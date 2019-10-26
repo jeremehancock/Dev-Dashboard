@@ -1,9 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Create pizero file on first run if hostname matches expected pi zero hostnames
 picheck="/var/www/html/config/pizero"
 config="/var/www/html/config"
 
+echo -e "\e[96m*************************** Checking for Pi Zero or Vagrant ***********\e[0m"
 if [[ "$HOSTNAME" == "pizero.local" || "$HOSTNAME" == "raspberrypi" ]]; then
   if [ ! -d "$config" ]; then
     sudo mkdir -p "$config"
@@ -14,7 +14,8 @@ if [[ "$HOSTNAME" == "pizero.local" || "$HOSTNAME" == "raspberrypi" ]]; then
   fi
 fi
 
-while [ -n "$1" ]; do # while loop starts
+# Build script options menu
+while [ -n "$1" ]; do 
     case "$1" in
     -hn)
         param="$2"
@@ -41,105 +42,79 @@ done
 
 if [ -f "$picheck" ]; then
 
-  # Copy build.conf to Pi for the bootstrap.sh file
+  echo -e "\e[96m*************************** Copy Configurations for Pi Zero *********\e[0m"
   sudo mkdir -p /etc/dev-dashboard/config
   sudo cp setup/config/build.conf /etc/dev-dashboard/config/build.conf
 
-  # run bootstrap manually
+  echo -e "\e[96m*************************** Run Bootstrap ***************************\e[0m"
   bash setup/bootstrap.sh
 
-  echo -e "\e[32mBootstrap Complete\e[0m"
-
-  # Chown /var/www/html to pi:
+  echo -e "\e[32m*************************** Set Permissions *************************\e[0m"
   sudo chown -R pi: /var/www/html
+  sudo chmod g+wx -R /var/www/html
 
-  echo -e "\e[32mChown Complete\e[0m"
-
-  # Copy dashboard to /var/www
+  echo -e "\e[32m*************************** Install Dashboard ***********************\e[0m"
   cp -r "localhost/www/html" "/var/www/"
-
-  # Create GitHub Config
   echo "<?php \$github_user = \"$git_user\"; ?>" > /var/www/html/config/github-config.php
 
-  echo -e "\e[32mWrite GitHub Config Complete\e[0m"
-
-  echo -e "\e[32mDashboard Setup Complete\e[0m"
-
-  # Clone Repos
+  echo -e "\e[32m*************************** Clone Repos *****************************\e[0m"
   for i in "${git_array[@]}"; do
     if [ ! -d /var/www/html/"${i^^}" ]; then
       git clone git@github.com:"$git_user"/"$i" /var/www/html/"${i^^}"
     fi
   done
-  echo -e "\e[32mCloning Complete\e[0m"
 
+  echo -e "\e[32m*************************** Remove Default Index File ***************\e[0m"
   if [ -f "/var/www/html/index.html" ]; then
     rm /var/www/html/index.html
   fi
 
-  echo -e "\e[32mClean-up Complete\e[0m"
-
-  # Enable VNC
+  echo -e "\e[32m*************************** Enable VNC ******************************\e[0m"
   if [ ! -f "/etc/systemd/system/multi-user.target.wants/vncserver-x11-serviced.service" ]; then
     sudo ln -s /usr/lib/systemd/system/vncserver-x11-serviced.service /etc/systemd/system/multi-user.target.wants/vncserver-x11-serviced.service
     sudo systemctl start vncserver-x11-serviced
   fi
 
-  echo -e "\e[32mEnable VNC Complete\e[0m"
-
-  # Set Timezone
+  echo -e "\e[32m*************************** Set Timezone ****************************\e[0m"
   sudo timedatectl set-timezone "$timezone"
 
-  echo -e "\e[32mSetting Timezone Complete\e[0m"
-
-  # Set locales
+  echo -e "\e[32m*************************** Set Locales *****************************\e[0m"
   sudo perl -pi -e 's/# "$locales_part1" "$locales_part2"/"$locales_part1" $locales_part2"/g' /etc/locale.gen
   sudo locale-gen "$locales_part1"
   sudo update-locale "$locales_part2"
 
-  echo -e "\e[32mSetting Locales Complete\e[0m"
-
-  # Resize filesystem
+  echo -e "\e[32m*************************** Expand Filesystem ***********************\e[0m"
   sudo raspi-config --expand-rootfs
 
-  echo -e "\e[32mFilesystem resize Complete\e[0m"
-
-  # Change hostname
+  echo -e "\e[32m*************************** Set Hostname ****************************\e[0m"
   if [[ "$hostname" == "" ]]; then
     sudo hostnamectl set-hostname "pizero.local"
   else
     sudo hostnamectl set-hostname "$hostname"
   fi
 
-  echo -e "\e[32mHostname Update Complete\e[0m"
-
-  # Change default pi password
+  echo -e "\e[32m*************************** Set Password ****************************\e[0m"
   sudo usermod -p "$pi_password" pi
 
-  echo -e "\e[32mPassword Change Complete\e[0m"
-
-  # Reboot to ensure hostname is updated
+  echo -e "\e[32m*************************** Process Complete Rebooting **************\e[0m"
   sudo reboot now
 
 else
 
-  # Create GitHub Config
+  echo -e "\e[32m*************************** Create GitHub Config ********************\e[0m"
   echo "<?php \$github_user = \"$git_user\"; ?>" > localhost/www/html/config/github-config.php
 
-  # Remove any previous boxes
+  echo -e "\e[32m*************************** Destroy Previous Vagrant ****************\e[0m"
   vagrant destroy -f
 
-  # Run vagrant -up
+  echo -e "\e[32m*************************** Run Vagrant Up **************************\e[0m"
   vagrant up
 
-  echo -e "\e[32mVagrant Complete\e[0m"
 
-  # Clone Repos
+  echo -e "\e[32m*************************** Clone Repos *****************************\e[0m"
   for i in "${git_array[@]}"; do
     if [ ! -d localhost/www/html/"${i^^}" ]; then
       git clone git@github.com:"$git_user"/"$i" localhost/www/html/"${i^^}"
     fi
   done
-  echo -e "\e[32mCloning Complete\e[0m"
-
 fi
