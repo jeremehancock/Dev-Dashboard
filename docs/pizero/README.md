@@ -45,7 +45,7 @@ Once you have a working Pi Zero USB dongle built you can use the steps below to 
   - git_email = Your GitHub email
   - git_name = Your GitHub Name
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard
-  - db_password = The password to use for MariaDB and PHPMyadmin (The username is `phpmyadmin`)
+  - db_password = The password to use for MariaDB and phpMyAdmin (The username is `phpmyadmin`)
   - pi_password = The password that you would like to use on the Pi Zero. The default is to keep the default pi password
   - timezone = The timezone to set on the Pi Zero
   - locales = The locales to use on the Pi Zero

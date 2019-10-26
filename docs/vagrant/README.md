@@ -22,7 +22,7 @@
   - git_email = Your GitHub email
   - git_name = Your GitHub Name
   - git_array = An array of the repos from your GitHub account that you would like to include in your dashboard
-  - db_password = The password to use for MariaDB and PHPMyadmin (The username is `phpmyadmin`)
+  - db_password = The password to use for MariaDB and phpMyAdmin (The username is `phpmyadmin`)
 
 - Run `bash build.sh`
 
